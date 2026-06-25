@@ -1,16 +1,16 @@
-# Agent Trajectory Model Experiments
+# Agent Trajectory Paper
 
-Public repository for reproducible experiment scripts and paper sources.
+TeX-only repository for the agent trajectory ML coursework report and paper
+drafts.
 
-This repository intentionally excludes datasets, derived artifacts, model
-checkpoints, execution logs, and private project material.
+This repository intentionally excludes experiment scripts, datasets, derived
+artifacts, model checkpoints, execution logs, labels, private notes, and private
+project material.
 
 ## Layout
 
-- `paper/`: LaTeX sources for Overleaf.
-- `scripts/`: public experiment scripts, added only after review.
-- `tests/`: tests for public experiment scripts.
-- `schemas/`: minimal public schemas and example configuration files.
+- `paper/`: LaTeX sources for Overleaf-compatible writing.
+- `scripts/`: local paper build helpers.
 
 ## Local Paper Build
 
@@ -30,6 +30,5 @@ The generated PDF is written to `paper/main.pdf` and is ignored by Git.
 
 ## Status
 
-The repository has been initialized with the paper scaffold first.
-Experiment scripts will be added only after they are sanitized for public
-release.
+The repository is restricted to report and paper writing. Experiment work stays
+in the private coursework project.
