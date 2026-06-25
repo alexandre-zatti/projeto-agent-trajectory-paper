@@ -1,0 +1,109 @@
+{
+  "artifact": {
+    "audience": "Sistemas Computacionais Aplicados course professor and future software-engineering venue reviewers",
+    "output_language": "English",
+    "type": "academic draft paper"
+  },
+  "blocks": [
+    {
+      "code": "contract_confirmation_required",
+      "message": "Confirm canonical sources and target outputs before academic-writing edits paper prose.",
+      "severity": "blocking"
+    },
+    {
+      "code": "public_evidence_boundary_required",
+      "message": "Only public-safe, sanitized evidence summaries may be used inside this paper repository.",
+      "severity": "blocking"
+    }
+  ],
+  "capabilities": {
+    "figures": {
+      "enabled": true,
+      "requires_project_data_or_approved_brief": true
+    },
+    "improvement_loop": {
+      "enabled": false,
+      "requires_confirmed_contract": true
+    },
+    "paper_access": {
+      "external_acquisition": "requires_user_approval"
+    }
+  },
+  "outputs": {
+    "candidates": [
+      "README.md",
+      "paper/main.tex",
+      "paper/references.bib",
+      "paper/sections/abstract.tex",
+      "paper/sections/introduction.tex",
+      "paper/sections/related_work.tex",
+      "paper/sections/data_labeling.tex",
+      "paper/sections/methodology.tex",
+      "paper/sections/experiments.tex",
+      "paper/sections/results.tex",
+      "paper/sections/discussion.tex",
+      "paper/sections/threats_to_validity.tex",
+      "paper/sections/next_steps.tex",
+      "paper/sections/conclusion.tex"
+    ],
+    "targets": []
+  },
+  "rigor": {
+    "citation_audit": "required_when_citations_or_references_present",
+    "claim_audit": "required_for_all_source_bound_claims",
+    "deai": "full_pipeline_required",
+    "external_literature": "requires_user_approval",
+    "latex_compile": "if_latex_target",
+    "mode": "full_backend_required",
+    "source_fidelity": "required"
+  },
+  "schema_version": 1,
+  "sources": {
+    "candidates": [
+      "README.md",
+      "paper/main.tex",
+      "paper/references.bib",
+      "paper/sections/abstract.tex",
+      "paper/sections/introduction.tex",
+      "paper/sections/related_work.tex",
+      "paper/sections/data_labeling.tex",
+      "paper/sections/methodology.tex",
+      "paper/sections/experiments.tex",
+      "paper/sections/results.tex",
+      "paper/sections/discussion.tex",
+      "paper/sections/threats_to_validity.tex",
+      "paper/sections/next_steps.tex",
+      "paper/sections/conclusion.tex",
+      "evidence/sanitized-project-brief.md",
+      "evidence/aggregate-results.md",
+      "evidence/figure-data/"
+    ],
+    "canonical": []
+  },
+  "state": {
+    "candidate_counts": {
+      "outputs": 14,
+      "sources": 17
+    },
+    "created_at": "2026-06-25T00:00:00Z",
+    "created_by": "codex academic-writing setup",
+    "notes": [
+      "User changed direction on 2026-06-25 from PT-BR progress report to English academic draft paper.",
+      "The paper repository is public and may contain only TeX, BibTeX, build helpers, public-safe writing instructions, and sanitized aggregate evidence.",
+      "Private experiment scripts, raw data, labels, logs, model outputs, run packets, and internal workflow notes must stay outside this repository.",
+      "No prose target is confirmed yet. Confirm this contract before replacing PT-BR draft placeholders with English academic paper prose."
+    ]
+  },
+  "status": "draft",
+  "validation": {
+    "lightweight_fallback_policy": "record_block_or_skip_with_rationale",
+    "required_pipeline": [
+      "contract_validation",
+      "source_fidelity",
+      "claim_audit",
+      "citation_audit",
+      "full_deai",
+      "latex_compile"
+    ]
+  }
+}

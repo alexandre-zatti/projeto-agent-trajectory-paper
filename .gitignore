@@ -3,6 +3,7 @@
 
 !/.gitignore
 !/README.md
+!/academic-gate.json
 
 !/paper/
 !/paper/**
