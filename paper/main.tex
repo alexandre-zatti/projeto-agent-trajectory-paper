@@ -1,44 +1,75 @@
-\documentclass[11pt]{article}
+\documentclass[sigconf,review,anonymous,nonacm]{acmart}
 
-\usepackage[margin=1in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{microtype}
-\usepackage{amsmath}
+\settopmatter{printacmref=false, printccs=false, printfolios=true}
+\setcopyright{none}
+\acmConference[SCA 2026]{Sistemas Computacionais Aplicados}{2026}{Brasil}
+\acmYear{2026}
+\copyrightyear{2026}
+
+\usepackage[brazilian]{babel}
 \usepackage{booktabs}
 \usepackage{graphicx}
-\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
 
-\title{Agent Trajectory Model Experiments}
-\author{}
-\date{}
+\newcommand{\draftnote}[1]{%
+  \par
+  \noindent\fbox{%
+    \begin{minipage}{0.96\linewidth}
+      \textbf{Nota de rascunho.} #1
+    \end{minipage}
+  }%
+  \par
+}
+
+\title[Modelagem de Trajetórias de Agentes]{Relatório Técnico de Andamento: Modelagem de Trajetórias de Agentes para Diagnóstico de Execuções}
+
+\author{Autor}
+\affiliation{%
+  \institution{Sistemas Computacionais Aplicados}
+  \country{Brasil}
+}
 
 \begin{document}
-\maketitle
 
 \begin{abstract}
 \input{sections/abstract}
 \end{abstract}
 
-\section{Introduction}
+\keywords{trajetórias de agentes, aprendizado de máquina, modelos de linguagem, avaliação experimental}
+
+\maketitle
+
+\section{Introdução}
 \input{sections/introduction}
 
-\section{Methodology}
+\section{Trabalhos Relacionados e Contexto}
+\input{sections/related_work}
+
+\section{Dados e Rotulagem}
+\input{sections/data_labeling}
+
+\section{Metodologia}
 \input{sections/methodology}
 
-\section{Experiments}
+\section{Experimentos}
 \input{sections/experiments}
 
-\section{Results}
+\section{Resultados Parciais}
 \input{sections/results}
 
-\section{Discussion}
+\section{Discussão}
 \input{sections/discussion}
 
-\section{Conclusion}
+\section{Ameaças à Validade}
+\input{sections/threats_to_validity}
+
+\section{Próximos Passos}
+\input{sections/next_steps}
+
+\section{Conclusão}
 \input{sections/conclusion}
 
-\bibliographystyle{plain}
+\bibliographystyle{ACM-Reference-Format}
 \bibliography{references}
 
 \end{document}
