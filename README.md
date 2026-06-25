@@ -12,6 +12,22 @@ checkpoints, execution logs, and private project material.
 - `tests/`: tests for public experiment scripts.
 - `schemas/`: minimal public schemas and example configuration files.
 
+## Local Paper Build
+
+Requirements:
+
+- `latexmk`
+- A TeX Live installation with the ACM article class available:
+  `kpsewhich acmart.cls`
+
+Compile the paper locally with:
+
+```bash
+./scripts/compile-paper.sh
+```
+
+The generated PDF is written to `paper/main.pdf` and is ignored by Git.
+
 ## Status
 
 The repository has been initialized with the paper scaffold first.
